@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+/* ----CSS Reset---- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----CSS Custom Variables---- */
+:root {
+  /* Colors */
+  --color-primary-900: hsl(300, 43%, 22%);
+  --color-primary-500: hsl(333, 80%, 67%);
+
+  --color-neutral-500: hsl(303, 10%, 53%);
+  --color-neutral-300: hsl(300, 24%, 96%);
+  --color-neutral-100: hsl(0, 0%, 100%);
+
+  /* Font Families */
+  --ff-primary: "League Spartan", sans-serif;
+
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* Font Sizes */
+  --fs-large: 2.75rem; /* 44px */
+  --fs-medium: 0.9375rem; /* 15px */
+
+  /* Radius */
+  --radius: 7px;
+}
+
+/* ----Body---- */
+body {
+  font-family: var(--ff-primary);
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  width: initial;
+  height: 100vh;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+body::before {
+  background: url(../images/bg-pattern-top-desktop.svg) no-repeat;
+  top: -77px;
+}
+
+body::after {
+  background: url(../images/bg-pattern-bottom-desktop.svg) no-repeat;
+}
+
+/* ----Main---- */
+main {
+  width: 70vw;
+  margin: 5rem auto;
+}
+
+/* Intro Section */
+.intro {
+  width: 50%;
+}
+
+.intro h1 {
+  width: 60%;
+  line-height: 0.9em;
+}
+
+.intro p {
+  width: 70%;
+  margin: 1rem 0;
+}
+
+/* Stats Section */
+.stats-contaitner {
+  width: 50%;
+}
+
+.stats {
+  margin: 1rem;
+  padding: 0.7rem 3rem 0.7rem 1rem;
+  justify-content: space-around;
+  font-size: var(--fs-medium);
+  border-radius: var(--radius);
+}
+
+.stats span {
+  margin: 0 0.3rem;
+}
+
+.stats:first-child {
+  margin-right: 6rem;
+}
+
+.stats:nth-child(2) {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.stats:last-child {
+  margin-left: 6rem;
+}
+
+.stats img {
+  width: 0.9rem;
+  margin: 0 0.2rem;
+}
+
+/* Testimonial Section */
+.testimonials {
+  margin: 1rem;
+  padding: 2rem 1.2rem;
+  border-radius: var(--radius);
+  width: fit-content;
+}
+
+.testimonials:first-child {
+  margin-left: 0;
+}
+
+.testimonials:nth-child(2) {
+  margin-top: 5rem;
+}
+
+.testimonials:last-child {
+  margin-top: 7rem;
+}
+
+.testimonials img {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.testimonials div:last-child {
+  margin-left: 1rem;
+}
+
+.testimonials p {
+  margin-top: 1.4rem;
+}
+
+/* ----Attributes---- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ----Utility Classes---- */
+.flex {
+  display: flex;
+}
+
+.flex-all-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+/* Font Color */
+.fc-primary-900 {
+  color: var(--color-primary-900);
+}
+
+.fc-primary-500 {
+  color: var(--color-primary-500);
+}
+
+.fc-neutral-500 {
+  color: var(--color-neutral-500);
+}
+
+.fc-neutral-100 {
+  color: var(--color-neutral-100);
+}
+
+/* Background Colors */
+.bc-primary-900 {
+  background-color: var(--color-primary-900);
+}
+
+.bc-neutral-500 {
+  background-color: var(--color-neutral-500);
+}
+
+.bc-neutral-300 {
+  background-color: var(--color-neutral-300);
+}
+
+/* Font Weights */
+.bold {
+  font-weight: var(--fw-bold);
+}
+
+.medium {
+  font-weight: var(--fw-medium);
+}
+
+.regular {
+  font-weight: var(--fw-regular);
+}
+
+/* Font Sizes  */
+.fs-large {
+  font-size: var(--fs-large);
+}
+
+.fs-medium {
+  font-size: var(--fs-medium);
+}

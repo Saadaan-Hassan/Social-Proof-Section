@@ -1,0 +1,83 @@
+/* Media Quries */
+@media screen and (max-width: 809px) {
+  :root {
+    /* Font Sizes */
+    --fs-large: 2.5rem; /* 40px */
+    --fs-medium: 1.25rem; /* 20px */
+    --fs-small: 1rem; /* 16px */
+  }
+
+  /* ----Body---- */
+  body::before {
+    background-image: url(../images/bg-pattern-top-mobile.svg);
+    width: initial;
+    height: 100vh;
+  }
+
+  body::after {
+    background-image: url(../images/bg-pattern-bottom-mobile.svg);
+    top: 77px;
+  }
+
+  /* ----Main---- */
+  main {
+    width: 93vw;
+  }
+
+  /* Intro Section */
+  .intro {
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro h1,
+  .intro p {
+    width: 100%;
+  }
+
+  .intro p {
+    font-weight: var(--fw-medium);
+  }
+
+  /* Stats Section */
+  .stats-contaitner {
+    width: 100%;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--fs-small);
+  }
+
+  .stats:first-child,
+  .stats:nth-child(2),
+  .stats:last-child {
+    margin: 1rem 0;
+    padding: 0.7rem 3rem;
+  }
+
+  /* Testimonial Section */
+  .testimonials {
+    padding: 2rem;
+  }
+
+  .testimonials:first-child,
+  .testimonials:nth-child(2),
+  .testimonials:last-child {
+    margin: 1rem;
+  }
+
+  .testimonials div:first-child {
+    flex-direction: row;
+  }
+
+  /* Utiliy Classes */
+  .flex-all-center {
+    flex-direction: column;
+  }
+
+  .fs-medium {
+    font-size: var(--fs-small);
+  }
+}
